@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailPengajuan">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Detail Pengajuan"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/table_header_cell_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_code_pengajuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_header_cell_bg"
+                android:text="Detail Pengajuan dengan code : "
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Nama"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/namaDetailUmum"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Kota Tujuan "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/kotaTujuanDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Tanggal Berangkat "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/tanggalBerangkatDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Tanggal Kembali "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/tanggalKembaliDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Biaya Pesawat "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/biayaPesawatDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Biaya Penginapan "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/biayaPenginapanDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Biaya Taksi Bandara "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/biayaTaksiBandaraDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Biaya Taksi Daerah "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/biayaTaksiDaerahDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Uang Harian "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/uangHarianDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+        <TableRow
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".05"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Status Pengajuan "
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/statusPengajuanDetailUmum"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

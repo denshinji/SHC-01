@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Lapor Perjadin</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="welcome">Welcome</string>
+
+    <string name="noteRegister">
+        Catatan : Aplikasi ini hanya untuk internal Pusat Pemanfaatan dan inovasi IPTEK LIPI Bogor, tidak untuk umum.
+    </string>
+    <string name="successRegister">
+        Proses verfikasi akun anda 2x24 jam. Anda akan dihubungi oleh staff administrasi jika akun anda sudah aktif dan bisa digunakan.
+    </string>
+    <string name="InfoApp">
+        Aplikasi Lapor Perjadin berbasis android ini dibuat sebagai karya ilmiah pada Skripsi di Program Studi Teknik Informatika Fakultas Komputer Universitas Muhammad Husni Thamrin Jakarta Tahun 2020.
+    </string>
+
+    <string name="successPengajuan">
+        Mohon bukti pendukung (Tiket,Dll) di serahkan ke Bagian Perjalanan Dinas.
+    </string>
+
+    <string-array name="list_spinner_status_admin">
+        <item>Menunggu Verifikasi</item>
+        <item>Disetujui</item>
+        <item>Ditolak</item>
+    </string-array>
+    <string-array name="list_spinner_status_user">
+        <item>Aktif</item>
+        <item>Daftar</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

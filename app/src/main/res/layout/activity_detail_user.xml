@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.DetailUser">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/toolbar" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Detail User"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/table_header_cell_bg"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_header_cell_bg"
+                android:text="Detail User "
+                android:id="@+id/tx_detailUser"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Nama"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/namaDetailUser"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Jabatan "
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/jabatanDetailUser"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="NIP "
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/nipDetailUser"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Email"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/emailDetailUser"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Username"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/usernameDetailUser"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_content_cell_bg"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"
+                android:background="@drawable/table_content_cell_bg"
+                android:text="Status"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/statusDetailUser"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_content_cell_bg"
+                android:entries="@array/list_spinner_status_user"
+                android:textColor="@color/colorPrimary" />
+        </TableRow>
+
+    </TableLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHapusUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus User"
+        android:onClick="toHapusUser"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Simpan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
